@@ -1,0 +1,23 @@
+.pad-bottom {
+	padding-bottom: 25px;
+}
+
+.pad-top {
+	padding-top: 25px;
+}
+
+.survey-card {
+	padding-bottom: 15px;
+}
+
+.create-survey-button {
+	font-size: 20px;
+}
+
+.no-surveys {
+	font-size: 20px;
+}
+
+.button-spacing {
+	padding: 5px;
+}

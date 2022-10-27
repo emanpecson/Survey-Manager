@@ -1,0 +1,37 @@
+<div class="title">
+	{{survey.title}}
+</div>
+
+<mat-divider></mat-divider>
+
+<div *ngFor="let question of survey.questionSet">
+	<div class="question">
+		{{ question.value }}
+	</div>
+
+	<div class="answer-group">
+		<mat-radio-button
+			*ngFor="let answer of question.answerSet"
+			class="answer-radio-button"
+			color="primary"
+			(click)="addSelectedAnswer(answer)"
+			(click)="setValidSubmission()"
+			[name]="question.id">
+
+			{{ answer.value }}
+
+		</mat-radio-button>
+	</div>
+</div>
+
+<!-- UNCOMMENT TO DEBUG -->
+<!-- Ids: {{ getSelectionsAsString() }} -->
+
+<div>
+	<button mat-raised-button
+		color="primary"
+		(click)="submitAttempt()"
+		[disabled]="!validSubmission">
+		SUBMIT
+	</button>
+</div>

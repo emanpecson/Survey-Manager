@@ -1,0 +1,20 @@
+<div class="title">
+	{{ survey.title }}
+</div>
+
+<mat-divider></mat-divider>
+
+<div *ngFor="let visual of visuals" class="body">
+	<div class="question-prompt">
+		{{ visual.question }}
+	</div>
+
+	<!-- Display chart -->
+	<div class="chart-size">
+		<apx-chart
+			[series]="visual.series"
+			[labels]="visual.labels"
+			[chart]="visual.options">
+		</apx-chart>
+	</div>
+</div>

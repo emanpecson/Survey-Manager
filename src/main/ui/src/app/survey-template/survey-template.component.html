@@ -1,0 +1,72 @@
+<div [formGroup]="surveyForm">
+
+	<mat-form-field appearance="legacy" class="heading">
+		<mat-label>Title</mat-label>
+		<input matInput type="text" class="form-control" formControlName="title">
+	</mat-form-field>
+
+	<mat-divider></mat-divider>
+	
+	<ng-container *ngFor="let question of getQuestions().controls; last as lastQuestion; index as qIdx">
+		<div [formGroup]="question" class="body">
+
+			<mat-form-field appearance="legacy" class="question-prompt">
+				<mat-label>Enter a question prompt</mat-label>
+				
+				<!-- Store form control input into "value" at this question -->
+				<input matInput type="text" class="form-control" formControlName="value">
+			</mat-form-field>
+
+			<div *ngFor="let answer of getAnswers(question).controls; last as lastAnswer; index as aIdx">
+				<div [formGroup]="answer">
+
+					<mat-radio-button disabled></mat-radio-button>
+					<mat-form-field appearance="standard">
+						<mat-label>Enter an answer choice</mat-label>
+
+						<!-- Store form control input into "value" at this answer -->
+						<input matInput type="text" class="form-control" formControlName="value">
+					</mat-form-field>
+			
+					<!-- Button to remove an answer from the QUESTION -->
+					<button mat-icon-button *ngIf="getAnswers(question).length > 1" color="warn" (click)="deleteAnswer(question, aIdx)">
+						<mat-icon>remove_circle</mat-icon>
+					</button>
+			
+					<!-- Button to add an answer to the QUESTION -->
+					<button mat-icon-button *ngIf="lastAnswer" color="primary" (click)="addAnswer(question)">
+						<mat-icon>add_circle</mat-icon>
+					</button>
+
+				</div>
+			</div>
+
+			<!-- Button to remove a question from the SURVEY -->
+			<button mat-raised-button *ngIf="getQuestions().length > 1" color="warn" (click)="deleteQuestion(qIdx)">
+				REMOVE QUESTION
+			</button>
+		
+			<!-- Button to add a question to the SURVEY -->
+			<div class="add-question-button">
+				<button mat-raised-button *ngIf="lastQuestion" color="primary" (click)="addQuestion()">
+					ADD QUESTION
+				</button>
+			</div>
+		</div>
+	</ng-container>
+</div>
+
+<mat-divider></mat-divider>
+
+<div class="footing">
+	<!-- Check if all input has some value -->
+	<button mat-raised-button
+		(click)="createSurvey(this.surveyForm)"
+		[disabled]="!surveyForm.valid">
+		CREATE SURVEY
+	</button>
+	
+	<!-- UNCOMMENT TO DEBUG -->
+	<!-- {{ getRawSurveyForm(surveyForm) }} -->
+</div>
+

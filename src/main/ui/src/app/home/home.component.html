@@ -1,0 +1,37 @@
+<div class="pad-bottom">
+	<a routerLinkActive="active" routerLink="/survey-template">
+		<button mat-raised-button color="primary" class="create-survey-button">
+			CREATE A SURVEY
+		</button>
+	</a>
+</div>
+
+<mat-divider></mat-divider>
+
+<div class="pad-top">
+	<div *ngIf="surveys.length < 1" class="no-surveys">
+		There are no surveys :(
+	</div>
+	<div *ngFor="let survey of surveys" class="survey-card">
+		<mat-card>
+			<mat-card-title>{{survey.title}}</mat-card-title>
+			<mat-card-actions>
+				<nav>
+					<a [routerLink]="['/survey-attempt', survey.id]">
+						<button mat-button color="primary">
+							COMPLETE
+						</button>
+					</a>
+					<a [routerLink]="['/data-visualization', survey.id]">
+						<button mat-button color="accent">
+							RESULTS
+						</button>
+					</a>
+					<button mat-button color="warn" (click)="openDialog(survey.title, survey.id)">
+						DELETE
+					</button>
+				</nav>
+			</mat-card-actions>
+		</mat-card>
+	</div>
+</div>

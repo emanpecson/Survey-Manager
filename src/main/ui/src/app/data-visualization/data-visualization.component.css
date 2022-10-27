@@ -1,0 +1,19 @@
+.chart-size {
+	width: 550px;
+	height: 550px;
+}
+
+.question-prompt {
+	font-size: 20px;
+	font-weight: bold
+}
+
+.title {
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.body {
+	margin-top: 20px;
+}

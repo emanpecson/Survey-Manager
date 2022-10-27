@@ -1,0 +1,35 @@
+.container {
+	padding-left: 20px;
+}
+
+.input-row {
+	display: flex;
+	align-items: center;
+}
+
+.question {
+	margin-top: 20px;
+}
+
+.heading {
+	font-weight: bold;
+	font-size: 30px;
+	width: 80%;
+}
+
+.body {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.footing {
+	margin-top: 20px;
+}
+
+.add-question-button {
+	margin-top: 30px;
+}
+
+.question-prompt {
+	width: 500px;
+}
