@@ -31,7 +31,7 @@ Run the following file:
 
 This will launch the back-end server, which can be accessed at `localhost:8080`.
 
-If lines from this file prompt an error, try running `mvn clean install -U` in the `Survey-Manager-Copy/` directory.
+Running this file seems to work best when in an IDE, there should be a "play" button that runs the Java file and references the `Survey-Manager-Copy/pom.xml` file. So if lines from this file prompt errors (such that there are unknown import dependencies), try running `mvn clean install -U` in the `Survey-Manager-Copy/` directory. 
 
 ---
 
