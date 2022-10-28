@@ -1,6 +1,35 @@
-# HOW TO START WEB-APP
+# **PROJECT OVERVIEW**
 
-## Requirements
+## **Description**
+
+The **Survey Manager** is a web-app that allows users to create basic surveys with ease. All created surveys can be managed at the home screen. From there, users can choose to submit a survey attempt, view survey results, or delete the survey from the database.
+
+---
+
+## **Brief Technical Implementation**
+
+### **Back-end**
+
+This app uses `Spring Boot` to easily design a RESTful API, configure the project with a given database, and manage table entities. 
+
+`Java` files of interest can be found under:
+
+	Survey-Manager-Copy/src/main/java/com/demo/websurvey/
+
+
+### **Front-end**
+
+This app uses `Angular` to manage the user-interface and experience with multi-page routing, HTTP requests to back-end, and various forms of grabbing user-input.
+
+`TypeScript, HTML, and CSS` files of interest can be found under:
+
+	Survey-Manager-Copy/src/main/ui/src/app
+
+---
+
+# **LOCAL SETUP**
+
+## **Requirements**
 
 - Java 17
 - MySQL
@@ -10,7 +39,7 @@
 
 ---
 
-## 1. MySQL Database Setup
+## **1. MySQL Database Setup**
 
 First, go to MySQL and create a local database.
 
@@ -24,7 +53,7 @@ Then open the following file to setup configurations to connect the database:
 
 ---
 
-## 2. Starting Back-end
+## **2. Starting Back-end**
 
 Run the following file:
 
@@ -36,7 +65,7 @@ Running this file seems to work best when in an IDE, there should be a "play" bu
 
 ---
 
-## 3. Starting Web-app
+## **3. Starting Web-app**
 
 Go to the following directory:
 
