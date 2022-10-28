@@ -45,4 +45,4 @@ Then run the Angular command `ng serve -o` to launch the wep-app, which can be a
 
 ---
 
-In order for the project to run, both the back-end server and web-app server must be launched. In case of disconnection, refer back to steps `3` and `4`.
+In order for the project to run, both the back-end server and web-app server must be launched. In case of disconnection, refer back to steps `2` and `3`.
