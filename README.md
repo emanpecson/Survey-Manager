@@ -2,7 +2,10 @@
 
 ## **Description**
 
-The **Survey Manager** is a web-app that allows users to create basic surveys with ease. All created surveys can be managed at the home screen. From there, users can choose to submit a survey attempt, view survey results, or delete the survey from the database.
+The **Survey Manager** is a web-app that allows users to create basic surveys with ease. All created surveys can be managed at the home screen. From there, users can choose to
+- submit a survey attempt,
+- view survey results, 
+- or delete the survey from the database.
 
 ---
 
@@ -10,7 +13,10 @@ The **Survey Manager** is a web-app that allows users to create basic surveys wi
 
 ### **Back-end**
 
-This app uses `Spring Boot` to easily design a RESTful API, configure the project with a given database, and manage table entities. 
+This app uses `Spring Boot` to easily 
+- design a RESTful API, 
+- configure the project with a given database, 
+- and manage table entities. 
 
 `Java` files of interest can be found under:
 
@@ -19,7 +25,10 @@ This app uses `Spring Boot` to easily design a RESTful API, configure the projec
 
 ### **Front-end**
 
-This app uses `Angular` to manage the user-interface and experience with multi-page routing, HTTP requests to back-end, and various forms of grabbing user-input.
+This app uses `Angular` to manage the user-interface and experience with 
+- multi-page routing, 
+- HTTP requests to back-end, 
+- and various forms of grabbing user-input.
 
 `TypeScript, HTML, and CSS` files of interest can be found under:
 
