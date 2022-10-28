@@ -20,7 +20,7 @@ This app uses `Spring Boot` to easily
 
 `Java` files of interest can be found under:
 
-	Survey-Manager-Copy/src/main/java/com/demo/websurvey/
+	Survey-Manager/src/main/java/com/demo/websurvey/
 
 
 ### **Front-end**
@@ -32,7 +32,7 @@ This app uses `Angular` to manage the user-interface and experience with
 
 `TypeScript, HTML, and CSS` files of interest can be found under:
 
-	Survey-Manager-Copy/src/main/ui/src/app
+	Survey-Manager/src/main/ui/src/app/
 
 ---
 
@@ -54,7 +54,7 @@ First, go to MySQL and create a local database.
 
 Then open the following file to setup configurations to connect the database:
 
-	Survey-Manager-Copy/src/main/resources/application.properties
+	Survey-Manager/src/main/resources/application.properties
 
 - Replace `<DATABASE_NAME>` with the name of the database you created
 - Replace `<YOUR_USER>` with user
@@ -66,11 +66,11 @@ Then open the following file to setup configurations to connect the database:
 
 Run the following file:
 
-	Survey-Manager-Copy/src/main/java/com/demo/websurvey/WebsurveyApplication.java
+	Survey-Manager/src/main/java/com/demo/websurvey/WebsurveyApplication.java
 
 This will launch the back-end server, which can be accessed at `localhost:8080`.
 
-Running this file seems to work best when in an IDE, there should be a "play" button that runs the Java file and references the `Survey-Manager-Copy/pom.xml` file. So if lines from this file prompt errors (such that there are unknown import dependencies), try running `mvn clean install -U` in the `Survey-Manager-Copy/` directory. 
+Running this file seems to work best when in an IDE, there should be a "play" button that runs the Java file and references the `Survey-Manager/pom.xml` file. So if lines from this file prompt errors (such that there are unknown import dependencies), try running `mvn clean install -U` in the `Survey-Manager/` directory. 
 
 ---
 
@@ -78,7 +78,7 @@ Running this file seems to work best when in an IDE, there should be a "play" bu
 
 Go to the following directory:
 
-	Survey-Manager-Copy/src/main/ui/
+	Survey-Manager/src/main/ui/
 
 Then run the Angular command `ng serve -o` to launch the wep-app, which can be accessed at `localhost:4200`.
 
