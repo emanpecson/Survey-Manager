@@ -3,9 +3,9 @@
 ## Requirements
 
 - Java 17
-- Spring Boot (Maven)
+- [Spring Boot (Maven)](https://docs.spring.io/spring-boot/docs/1.0.0.RC5/reference/html/getting-started-installing-spring-boot.html)
 - Node.js
-- Angular CLI
+- [Angular CLI](https://angular.io/cli)
 
 ---
 
