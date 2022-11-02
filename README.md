@@ -36,6 +36,18 @@ This app uses `Angular` to manage the user-interface and experience with
 
 ---
 
+# **GIVE IT A TRY**
+
+## **Client (Web-app)**
+
+http://surveymanagerngcode.s3-website-us-west-2.amazonaws.com
+
+## **Server (Back-end)**
+
+Userservice-env.eba-z2qfcpqe.us-west-2.elasticbeanstalk.com
+
+---
+
 # **LOCAL SETUP**
 
 ## **Requirements**
